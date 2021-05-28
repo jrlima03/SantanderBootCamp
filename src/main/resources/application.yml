@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /bootcamp
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: postgres://prqsnipaxikyfh:8dde5a184d297de1366a1b8c381a69bc02f31b41d3bbcd180bde6e5fb1024060@ec2-18-215-111-67.compute-1.amazonaws.com:5432/d2inb7glloehqu
+    username: prqsnipaxikyfh
+    password: 8dde5a184d297de1366a1b8c381a69bc02f31b41d3bbcd180bde6e5fb1024060
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+
+application:
+  description: Dev Week Santander - DIO
